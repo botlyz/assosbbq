@@ -19,6 +19,8 @@ nav {
   flex-wrap: wrap;
   gap: 8px;
   font-size: 18px;
+  background: #b5431f;
+  padding: 12px;
 }
 
 html {
