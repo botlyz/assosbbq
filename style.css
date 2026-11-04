@@ -16,7 +16,9 @@ footer {
 
 nav {
   display: flex;
-  gap: 16px;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 18px;
 }
 
 html {
