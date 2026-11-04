@@ -16,7 +16,9 @@ footer {
 
 nav {
   display: flex;
-  gap: 16px;
+  gap: 24px;
+  background: #b5431f;
+  padding: 12px;
 }
 
 html {
