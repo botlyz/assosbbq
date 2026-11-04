@@ -52,7 +52,24 @@
 
     <section id="inscription">
       <h2>Inscription</h2>
-      <!-- Fonctionnalité C : Étudiant 3 -->
+
+      <form onsubmit="return false">
+        <label for="nom">Nom et prénom</label>
+        <input id="nom" name="nom" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="evenement">Événement</label>
+        <select id="evenement" name="evenement" required>
+          <option value="">Choisir un événement</option>
+          <option>Barbecue de rentrée</option>
+          <option>Atelier grillades</option>
+          <option>Soirée de printemps</option>
+        </select>
+
+        <button type="submit">S'inscrire</button>
+      </form>
     </section>
   </main>
 

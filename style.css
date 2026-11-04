@@ -29,3 +29,10 @@ html {
   padding: 16px;
   border: 1px solid #cccccc;
 }
+
+
+form {
+  display: grid;
+  gap: 8px;
+  max-width: 400px;
+}
