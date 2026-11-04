@@ -50,11 +50,29 @@ Limitation : au démarrage, un push direct sur `main` et la PR #1 sans revue ont
 
 ## Conflit et résolution
 
+Les branches `feature/identite-visuelle` et `feature/adaptation-mobile` ont modifié le même bloc `nav` de `style.css`.
+
+La première ajoutait une couleur de fond et un padding. La seconde ajoutait le retour à la ligne du menu et une taille de texte adaptée au mobile. Les valeurs de `gap` étaient différentes, ce qui a provoqué un vrai conflit après la fusion de la PR #14.
+
+Lucas a coordonné l'intégration : la PR #14 a été fusionnée en premier, puis Maël a fusionné `develop` dans sa branche pour résoudre le conflit. Les deux améliorations ont été conservées, avec un `gap` de 8px adapté au mobile.
+
 ## Versions publiées
 
 ## Difficultés rencontrées
 
 ## Questions de synthèse
+
+### 1. Quel est l'intérêt de séparer développements en cours et versions stables ?
+
+**Auteur : Maël Butor-Blamont**
+
+Cette séparation permet de développer sans casser la version livrée. `main` reste stable, tandis que `develop` accueille les nouveautés avant leur validation.
+
+### 2. Pourquoi imposer une revue de code avant intégration ?
+
+**Auteur : Maël Butor-Blamont**
+
+La revue permet de détecter les erreurs avant l'intégration, de vérifier le respect des critères et de partager la connaissance du code dans l'équipe.
 
 ### 3. Quelles situations provoquent un conflit Git et pourquoi sa résolution n'est-elle pas toujours automatique ?
 
@@ -73,3 +91,9 @@ Une correction classique part de `develop` et sera livrée dans une prochaine ve
 **Auteur : Sofien EL YADINI**
 
 Sans ce report, `develop` garderait le bug, qui réapparaîtrait à la prochaine version. Le report garantit que la correction reste présente dans les versions futures.
+
+### 6. Quel est le rôle d'une branche de release ?
+
+**Auteur : Maël Butor-Blamont**
+
+Elle prépare une version stable. On y fait les dernières vérifications et corrections, sans nouvelle fonctionnalité, avant de l'intégrer à `main` puis de reporter les corrections sur `develop`.
