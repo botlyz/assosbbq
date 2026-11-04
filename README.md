@@ -7,7 +7,7 @@ Site web d'une association étudiante organisant des événements.
 | Pseudonyme GitHub | Nom | Prénom | Rôle |
 |---|---|---|---|
 | @botlyz | EL YADINI | Sofien | Étudiant 1 |
-| @maelkobura | Kobura | Maël | Étudiant 2 |
+| @maelkobura | Butor-Blamont | Maël | Étudiant 2 |
 | @LucasDevrin-code | Devrin | Lucas | Étudiant 3 |
 
 ## Fonctionnalités
