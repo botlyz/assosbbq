@@ -19,17 +19,57 @@
   <main>
     <section id="presentation">
       <h2>Présentation</h2>
-      <!-- Fonctionnalité A : Étudiant 1 -->
+      <p>Assos BBQ réunit les étudiants autour de barbecues, d'ateliers et de soirées conviviales tout au long de l'année.</p>
     </section>
 
-    <section id="evenements">
-      <h2>Événements</h2>
-      <!-- Fonctionnalité B : Étudiant 2 -->
-    </section>
+    <section id="catalogue">
+  <h2>Événements</h2>
+
+  <article class="evenement">
+    <h3>Barbecue de rentrée</h3>
+    <p>Date : 12 décembre 2026</p>
+    <p>Lieu : parvis du campus</p>
+    <p>Un grand barbecue pour rencontrer les membres de l'association.</p>
+    <a href="#inscription">S'inscrire</a>
+  </article>
+
+  <article class="evenement">
+    <h3>Atelier grillades</h3>
+    <p>Date : 16 janvier 2027</p>
+    <p>Lieu : cuisine de la résidence</p>
+    <p>Un atelier pour apprendre les bases de la cuisine au feu.</p>
+    <a href="#inscription">S'inscrire</a>
+  </article>
+
+  <article class="evenement">
+    <h3>Soirée de printemps</h3>
+    <p>Date : 20 mars 2027</p>
+    <p>Lieu : jardin du campus</p>
+    <p>Une soirée conviviale pour fêter le retour des beaux jours.</p>
+    <a href="#inscription">S'inscrire</a>
+  </article>
+</section>
 
     <section id="inscription">
       <h2>Inscription</h2>
-      <!-- Fonctionnalité C : Étudiant 3 -->
+
+      <form onsubmit="return false">
+        <label for="nom">Nom et prénom</label>
+        <input id="nom" name="nom" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="evenement">Événement</label>
+        <select id="evenement" name="evenement" required>
+          <option value="">Choisir un événement</option>
+          <option>Barbecue de rentrée</option>
+          <option>Atelier grillades</option>
+          <option>Soirée de printemps</option>
+        </select>
+
+        <button type="submit">S'inscrire</button>
+      </form>
     </section>
   </main>
 

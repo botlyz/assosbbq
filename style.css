@@ -16,5 +16,28 @@ footer {
 
 nav {
   display: flex;
-  gap: 16px;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 18px;
+  background: #b5431f;
+  padding: 12px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.evenement {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 16px;
+  padding: 16px;
+  border: 1px solid #cccccc;
+}
+
+
+form {
+  display: grid;
+  gap: 8px;
+  max-width: 400px;
 }
