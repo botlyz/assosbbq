@@ -58,6 +58,8 @@ Lucas a coordonné l'intégration : la PR #14 a été fusionnée en premier, pui
 
 ## Versions publiées
 
+- `v1.0` : première version stable du site.
+
 ## Difficultés rencontrées
 
 - Le débordement des cartes et le lien cassé vers les événements sont des anomalies simulées volontairement pour les exercices du sujet.
