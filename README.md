@@ -59,6 +59,7 @@ Lucas a coordonné l'intégration : la PR #14 a été fusionnée en premier, pui
 ## Versions publiées
 
 - `v1.0` : première version stable du site.
+- `v1.0.1` : correction du lien de navigation vers les événements.
 
 ## Difficultés rencontrées
 
