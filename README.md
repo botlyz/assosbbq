@@ -60,6 +60,11 @@ Lucas a coordonné l'intégration : la PR #14 a été fusionnée en premier, pui
 
 ## Difficultés rencontrées
 
+- Le débordement des cartes et le lien cassé vers les événements sont des anomalies simulées volontairement pour les exercices du sujet.
+- Un push direct sur `main` a nécessité une PR de synchronisation vers `develop`.
+- Plusieurs branches locales partaient d'un ancien historique et ont dû être réalignées sur `develop`.
+- Une identité Git mal configurée a dû être corrigée pour rattacher les commits au bon compte.
+
 ## Questions de synthèse
 
 ### 1. Quel est l'intérêt de séparer développements en cours et versions stables ?
@@ -97,3 +102,15 @@ Sans ce report, `develop` garderait le bug, qui réapparaîtrait à la prochaine
 **Auteur : Maël Butor-Blamont**
 
 Elle prépare une version stable. On y fait les dernières vérifications et corrections, sans nouvelle fonctionnalité, avant de l'intégrer à `main` puis de reporter les corrections sur `develop`.
+
+### 7. Comment GitHub Projects et les Issues facilitent-ils organisation et traçabilité ?
+
+**Auteur : Lucas Devrin**
+
+Les Issues décrivent chaque tâche, son responsable et ses critères. Le Project montre leur avancement et leur ordre. Les liens entre Issues, commits et Pull Requests permettent de suivre chaque changement.
+
+### 8. Comment retrouver l'origine d'une modification dans l'historique GitHub ?
+
+**Auteur : Lucas Devrin**
+
+On consulte l'historique des commits ou la vue Blame d'un fichier. Le commit indique l'auteur, la date et le message, et son numéro d'Issue ou sa Pull Request donne le contexte de la modification.
